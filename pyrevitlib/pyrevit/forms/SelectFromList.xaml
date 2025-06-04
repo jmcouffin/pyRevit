@@ -43,8 +43,6 @@
                 <CheckBox Grid.Column="0"
                           VerticalAlignment="Center"
                           IsChecked="{Binding checked}"
-                          Checked="check_selected"
-                          Unchecked="uncheck_selected"
                           Visibility="{Binding checkable}"/>
                 <Control Grid.Column="1"
                          VerticalAlignment="Center" VerticalContentAlignment="Center"
