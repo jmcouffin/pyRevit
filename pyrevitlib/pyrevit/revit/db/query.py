@@ -1178,7 +1178,7 @@ def get_rvt_link_doc_name(rvtlink_instance):
     Returns:
         str: The name of the Revit link document, without the file extension and any directory paths.
     """
-    return get_name(rvtlink_instance).split(" \ ")[0].split(".rvt")[0]
+    return get_name(rvtlink_instance).split("\\")[0].split(".rvt")[0]
 
 
 def get_rvt_link_instance_name(rvtlink_instance=None):
@@ -1364,7 +1364,7 @@ def is_schedule(view):
         isintkeynote = view.IsInternalKeynoteSchedule
         iskeynotelegend = (
             view.Definition.CategoryId
-            == get_category(DB.BuiltInCategory.OST_KeynoteTags).Id
+            == get_category(DB.BuiltInCategory.OST_KeynoteTags, view.Document).Id
         )
 
         return not (isrevsched or isintkeynote or iskeynotelegend)
