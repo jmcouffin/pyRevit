@@ -1900,7 +1900,6 @@ namespace pyRevitLabs.Emojis {
             { "princess_medium-light_skin_tone", "1F478-1F3FC" },
             { "princess_medium_skin_tone", "1F478-1F3FD" },
             { "printer", "1F5A8" },
-            { "prohibited", "1F6AB" },
             { "purple_heart", "1F49C" },
             { "purse", "1F45B" },
             { "pushpin", "1F4CC" },
